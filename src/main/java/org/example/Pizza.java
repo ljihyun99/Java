@@ -17,7 +17,13 @@ public class Pizza {
         this.toppings = toppings;
     }
 
-
+    //overloaded constructor
+    Pizza(String name,String bread, String sauce, boolean cheese) {
+        this.name = name;
+        this.bread = bread;
+        this.sauce = sauce;
+        this.cheese = cheese;
+    }
     void bake() {
         System.out.println("Bake the pizza: " + this.name);
     }

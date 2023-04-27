@@ -7,7 +7,7 @@ public class Main {
 
         //peperoni pizza
         String[] toppingsForPeperoniPizza = {"Peperoni", "Olive"};
-        Pizza peperroni_pizza = new Pizza("Peperoni", "thick bread", "tomato sauce", true,  toppingsForPeperoniPizza);
+        Pizza peperroni_pizza = new Pizza("Peperoni", "thick bread", "tomato sauce", true, toppingsForPeperoniPizza);
         peperroni_pizza.bake();
         peperroni_pizza.serve();
 
@@ -17,5 +17,8 @@ public class Main {
         hawaii_Pizza.bake();
         hawaii_Pizza.serve();
 
+        Pizza margherita_Pizza = new Pizza("margehrita", "thin bread", "tomato sauce", true);
+        margherita_Pizza.bake();
+        margherita_Pizza.serve();
     }
 }
