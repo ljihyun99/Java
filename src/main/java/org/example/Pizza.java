@@ -31,4 +31,15 @@ public class Pizza {
     void serve(){
         System.out.println("Serve the pizza: "+ this.name);
     }
+
+    public String toString(){
+        String cheeseOrNot;
+        if(cheese) {
+            cheeseOrNot = "Cheese included";
+        }else {
+            cheeseOrNot = "Cheese unincluded";
+        }
+        String myString = name +"\n" + bread + "\n" + sauce + "\n" + cheeseOrNot;
+        return myString;
+    }
 }
