@@ -17,6 +17,7 @@ public class Pizza {
         this.toppings = toppings;
     }
 
+
     void bake() {
         System.out.println("Bake the pizza: " + this.name);
     }
