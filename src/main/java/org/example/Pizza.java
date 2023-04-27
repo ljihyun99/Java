@@ -1,6 +1,6 @@
 package org.example;
 
-public class Pizza {
+public class Pizza extends Food {
     static int totalNumOfPizzaInOrder;
     String name;
     String bread;

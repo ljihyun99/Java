@@ -11,6 +11,7 @@ public class Main {
 
         String[] toppingsForPeperoniPizza = {"Peperoni", "Olive"};
         Pizza peperoni_pizza = new Pizza("Peperoni", "thick bread", "tomato sauce", false, toppingsForPeperoniPizza); //peperoni
+        peperoni_pizza.eat();
         callAPizzaList[0] = peperoni_pizza;
         System.out.println("total number of Pizzas in order: "+ Pizza.totalNumOfPizzaInOrder);
         callAPizzaList[0].bake();
