@@ -10,14 +10,18 @@ public class Main {
         Pizza[] callAPizzaList = new Pizza[3];
 
         String[] toppingsForPeperoniPizza = {"Peperoni", "Olive"};
-        callAPizzaList[0] = new Pizza("Peperoni", "thick bread", "tomato sauce", false, toppingsForPeperoniPizza); //peperoni
+        Pizza peperoni_pizza = new Pizza("Peperoni", "thick bread", "tomato sauce", false, toppingsForPeperoniPizza); //peperoni
+        callAPizzaList[0] = peperoni_pizza;
+        System.out.println("total number of Pizzas in order: "+ Pizza.totalNumOfPizzaInOrder);
         callAPizzaList[0].bake();
         delivery.needToBeDelivered(callAPizzaList[0]);
+        System.out.println("total number of Pizzas in order: "+Pizza.totalNumOfPizzaInOrder);
 
-        String[] toppingsForHawaiiPizza = {"Pineapple", "Olive", "tomatos"};
-        callAPizzaList[1] = new Pizza("Hawaii", "thin bread", "tomato sauce", true, toppingsForHawaiiPizza); //hawaii
-
-        callAPizzaList[2] = new Pizza("margehrita", "thin bread", "tomato sauce", true); //margherita
+//        String[] toppingsForHawaiiPizza = {"Pineapple", "Olive", "tomatos"};
+//        Pizza hawaiiPizza= new Pizza("Hawaii", "thin bread", "tomato sauce", true, toppingsForHawaiiPizza); //hawaii
+//        callAPizzaList[1] = hawaiiPizza;
+//        Pizza margheritaPizza= new Pizza("margehrita", "thin bread", "tomato sauce", true); //margherita
+//        callAPizzaList[2] = margheritaPizza;
 
 //        for(Pizza pizza:callAPizzaList) {
 //            System.out.println(pizza.name);

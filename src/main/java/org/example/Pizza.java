@@ -1,7 +1,7 @@
 package org.example;
 
 public class Pizza {
-
+    static int totalNumOfPizzaInOrder;
     String name;
     String bread;
     String sauce;
@@ -16,6 +16,7 @@ public class Pizza {
         this.sauce = sauce;
         this.cheese = cheese;
         this.toppings = toppings;
+        totalNumOfPizzaInOrder++;
     }
 
     //overloaded constructor
@@ -24,10 +25,12 @@ public class Pizza {
         this.bread = bread;
         this.sauce = sauce;
         this.cheese = cheese;
+        totalNumOfPizzaInOrder++;
     }
     void bake() {
         System.out.println("The pizza " + this.name + "is baked. Ready to deliver.");
         readyToDeliver = true;
+        totalNumOfPizzaInOrder--;
     }
 
 
