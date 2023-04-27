@@ -7,6 +7,7 @@ public class Pizza {
     String sauce;
 
     boolean cheese;
+    boolean readyToDeliver = false;
 
     String[] toppings;
     Pizza(String name,String bread, String sauce, boolean cheese, String[] toppings){
@@ -25,12 +26,10 @@ public class Pizza {
         this.cheese = cheese;
     }
     void bake() {
-        System.out.println("Bake the pizza: " + this.name);
+        System.out.println("The pizza " + this.name + "is baked. Ready to deliver.");
+        readyToDeliver = true;
     }
 
-    void serve(){
-        System.out.println("Serve the pizza: "+ this.name);
-    }
 
     public String toString(){
         String cheeseOrNot;
