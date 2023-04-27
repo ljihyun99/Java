@@ -27,6 +27,10 @@ public class Pizza extends Food {
         this.cheese = cheese;
         totalNumOfPizzaInOrder++;
     }
+    @Override
+    void eat() {
+        System.out.println("Pizza is a food. It is edible.");
+    }
     void bake() {
         System.out.println("The pizza " + this.name + "is baked. Ready to deliver.");
         readyToDeliver = true;
