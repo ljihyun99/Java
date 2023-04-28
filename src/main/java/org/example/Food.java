@@ -1,6 +1,6 @@
 package org.example;
 
-public class Food {
+public abstract class Food {
 
     void eat() {
         System.out.println("This is food. It's edible.");
